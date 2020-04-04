@@ -10,7 +10,7 @@ import time
 import pandas as pd
 import numpy as np
 import os
-os.chdir(r"C:\Users\pujitha.gangarapu\Documents\Projects\Lindsey Requests\chromedriver_win32")
+os.chdir(r"Directory")
 
 def pull_jobs(url,num_jobs):
     jobs = []
@@ -73,7 +73,7 @@ def pull_jobs(url,num_jobs):
 
 if __name__ == '__main__':
   options = webdriver.ChromeOptions()
-  driver = webdriver.Chrome(executable_path=r"C:\Users\pujitha.gangarapu\Documents\Projects\Lindsey Requests\chromedriver.exe", options=options)
+  driver = webdriver.Chrome(executable_path=r"chromedriver.exe", options=options)
   driver.set_window_size(1120, 1000)
   url_format = "https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword={}&sc.keyword={}&locT=C&locId={}&jobType=all&fromAge=1"
   url_dict = [{"Location": 'Asutin',"URL":'1139761'},
